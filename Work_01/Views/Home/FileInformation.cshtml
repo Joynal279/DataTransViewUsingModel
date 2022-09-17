@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "File Information";
+}
+<h1>@ViewData["Title"]</h1>
+
+@foreach (var item in ViewBag.res)
+{
+    <li>@item.Id</li>
+    <li>@item.Name</li>
+    <li>@item.Extension</li>
+    <li>@item.Size</li>
+    <li>@item.Path</li>
+}
+
+<p>Use this page to detail of our File Information.</p>
